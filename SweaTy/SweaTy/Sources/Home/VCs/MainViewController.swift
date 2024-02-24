@@ -24,8 +24,10 @@ class MainViewController: UIViewController {
     
     private lazy var mainContentView = UIView()
     
+    
+    
     private lazy var startExerciseView: ShadowRoundView = {
-        let view = ShadowRoundView()
+        let view = ShadowRoundView(view: StartExerciseView())
         return view
     }()
     
@@ -87,7 +89,7 @@ class MainViewController: UIViewController {
             make.top.equalTo(mainScrollView).offset(20)
             make.left.equalTo(mainScrollView).offset(20)
             make.right.equalTo(mainScrollView).offset(-20)
-            make.height.equalTo(150)
+            make.height.equalTo(130)
         }
         
         mainContentView.addSubview(weekCalendarLabel)
