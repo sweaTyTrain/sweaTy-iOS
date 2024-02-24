@@ -26,6 +26,7 @@
 		A69A81B62B837CFC006BAEB2 /* ShadowRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81B52B837CFC006BAEB2 /* ShadowRoundView.swift */; };
 		A69A81B82B83AE14006BAEB2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81B72B83AE14006BAEB2 /* UIColor+.swift */; };
 		A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81C72B888891006BAEB2 /* StartExerciseView.swift */; };
+		A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		A69A81B52B837CFC006BAEB2 /* ShadowRoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowRoundView.swift; sourceTree = "<group>"; };
 		A69A81B72B83AE14006BAEB2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A69A81C72B888891006BAEB2 /* StartExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExerciseView.swift; sourceTree = "<group>"; };
+		A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				A69A81A22B8235DC006BAEB2 /* MainViewController.swift */,
+				A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				A69A81A82B82369E006BAEB2 /* StatisticsCoordinator.swift in Sources */,
 				A69A819B2B823133006BAEB2 /* AppCoordinator.swift in Sources */,
 				A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */,
+				A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */,
 				A69A81AF2B823751006BAEB2 /* MyPageCoordinator.swift in Sources */,
 				A69A819D2B8231D3006BAEB2 /* MainTabBarCoordinator.swift in Sources */,
 				A69A81AA2B8236C9006BAEB2 /* StatisticsViewController.swift in Sources */,

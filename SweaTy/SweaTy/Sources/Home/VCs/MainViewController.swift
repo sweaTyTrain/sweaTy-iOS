@@ -8,6 +8,10 @@
 import SnapKit
 import UIKit
 
+protocol MainViewControllerDelegate: AnyObject {
+    func moveSelectView()
+}
+
 class MainViewController: UIViewController {
     private lazy var logoLabel : UILabel = {
         let label = UILabel()
@@ -18,7 +22,7 @@ class MainViewController: UIViewController {
     
     private lazy var mainScrollView: UIScrollView = {
         let scrollView = UIScrollView()
-        scrollView.backgroundColor = .systemGray5
+        scrollView.backgroundColor = .systemBackground
         return scrollView
     }()
     
@@ -27,7 +31,12 @@ class MainViewController: UIViewController {
     
     
     private lazy var startExerciseView: ShadowRoundView = {
-        let view = ShadowRoundView(view: StartExerciseView())
+        let startExerciseView = StartExerciseView()
+        let action = UIAction { [weak self] _ in
+            self?.delegate?.moveSelectView()
+        }
+        startExerciseView.addAction(action)
+        let view = ShadowRoundView(view: startExerciseView)
         return view
     }()
     
@@ -54,6 +63,9 @@ class MainViewController: UIViewController {
         let view = ShadowRoundView()
         return view
     }()
+    
+    // weak var로 하면, viewDidLoad 이후 nil이 되어버림??
+    var delegate: MainViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

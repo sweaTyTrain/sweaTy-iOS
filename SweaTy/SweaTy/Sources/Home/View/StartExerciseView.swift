@@ -49,4 +49,8 @@ final class StartExerciseView: UIView {
             make.height.equalTo(50)
         }
     }
+    
+    func addAction(_ action: UIAction) {
+        startButton.addAction(action, for: .touchUpInside)
+    }
 }

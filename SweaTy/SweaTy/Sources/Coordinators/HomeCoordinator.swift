@@ -14,10 +14,18 @@ final class HomeCoordinator : Coordinator {
 
     func start() {
         let mainVC = MainViewController()
+        mainVC.delegate = self
         navigationController.pushViewController(mainVC, animated: true)
     }
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
+    }
+}
+
+extension HomeCoordinator: MainViewControllerDelegate {
+    func moveSelectView() {
+        let selectVC = ExerciseSelectViewController()
+        navigationController.pushViewController(selectVC, animated: true)
     }
 }
