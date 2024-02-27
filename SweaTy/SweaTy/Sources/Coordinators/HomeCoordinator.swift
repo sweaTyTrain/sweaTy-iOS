@@ -23,9 +23,30 @@ final class HomeCoordinator : Coordinator {
     }
 }
 
-extension HomeCoordinator: MainViewControllerDelegate {
+extension HomeCoordinator: MainViewControllerDelegate,
+                           ExerciseSelectViewControllerDelegate,
+                           PrepareViewControllerDelegate,
+                           ExercisingViewControllerDelegate {
     func moveSelectView() {
         let selectVC = ExerciseSelectViewController()
+        selectVC.delegate = self
         navigationController.pushViewController(selectVC, animated: true)
+    }
+    
+    func movePrepareView() {
+        let prepareVC = PrepareViewController()
+        prepareVC.delegate = self
+        navigationController.pushViewController(prepareVC, animated: true)
+    }
+    
+    func moveExercisingView() {
+        let exercisingVC = ExercisingViewController()
+        exercisingVC.delegate = self
+        navigationController.pushViewController(exercisingVC, animated: true)
+    }
+    
+    func moveResultView() {
+        let resultVC = ExerciseResultViewController()
+        navigationController.pushViewController(resultVC, animated: true)
     }
 }

@@ -44,7 +44,7 @@ class MainTabBarCoordinator: Coordinator {
         // TabBar 스타일 지정
         self.tabBarController.view.backgroundColor = .systemBackground
         self.tabBarController.tabBar.backgroundColor = .systemBackground
-        self.tabBarController.tabBar.tintColor = UIColor.red // 임시
+        self.tabBarController.tabBar.tintColor = .sweatyGreen
     }
     
     

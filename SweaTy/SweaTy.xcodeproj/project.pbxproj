@@ -27,6 +27,10 @@
 		A69A81B82B83AE14006BAEB2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81B72B83AE14006BAEB2 /* UIColor+.swift */; };
 		A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81C72B888891006BAEB2 /* StartExerciseView.swift */; };
 		A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */; };
+		A69A81CC2B8C786F006BAEB2 /* SetSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81CB2B8C786F006BAEB2 /* SetSelectionView.swift */; };
+		A69A81CE2B8C832B006BAEB2 /* PrepareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81CD2B8C832B006BAEB2 /* PrepareViewController.swift */; };
+		A69A81D02B8C8A42006BAEB2 /* ExercisingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81CF2B8C8A42006BAEB2 /* ExercisingViewController.swift */; };
+		A69A81D22B8C8BE3006BAEB2 /* ExerciseResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81D12B8C8BE3006BAEB2 /* ExerciseResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +54,10 @@
 		A69A81B72B83AE14006BAEB2 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A69A81C72B888891006BAEB2 /* StartExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartExerciseView.swift; sourceTree = "<group>"; };
 		A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSelectViewController.swift; sourceTree = "<group>"; };
+		A69A81CB2B8C786F006BAEB2 /* SetSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSelectionView.swift; sourceTree = "<group>"; };
+		A69A81CD2B8C832B006BAEB2 /* PrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
+		A69A81CF2B8C8A42006BAEB2 /* ExercisingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisingViewController.swift; sourceTree = "<group>"; };
+		A69A81D12B8C8BE3006BAEB2 /* ExerciseResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +136,9 @@
 			children = (
 				A69A81A22B8235DC006BAEB2 /* MainViewController.swift */,
 				A69A81C92B89DCA9006BAEB2 /* ExerciseSelectViewController.swift */,
+				A69A81CD2B8C832B006BAEB2 /* PrepareViewController.swift */,
+				A69A81CF2B8C8A42006BAEB2 /* ExercisingViewController.swift */,
+				A69A81D12B8C8BE3006BAEB2 /* ExerciseResultViewController.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -191,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				A69A81C72B888891006BAEB2 /* StartExerciseView.swift */,
+				A69A81CB2B8C786F006BAEB2 /* SetSelectionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 				A69A81972B8230DF006BAEB2 /* Coordinator.swift in Sources */,
 				A69A81A82B82369E006BAEB2 /* StatisticsCoordinator.swift in Sources */,
 				A69A819B2B823133006BAEB2 /* AppCoordinator.swift in Sources */,
+				A69A81D22B8C8BE3006BAEB2 /* ExerciseResultViewController.swift in Sources */,
 				A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */,
 				A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */,
 				A69A81AF2B823751006BAEB2 /* MyPageCoordinator.swift in Sources */,
@@ -284,7 +297,10 @@
 				A69A81AD2B823728006BAEB2 /* MyPageViewController.swift in Sources */,
 				A69A81A12B823410006BAEB2 /* HomeCoordinator.swift in Sources */,
 				A69A81B62B837CFC006BAEB2 /* ShadowRoundView.swift in Sources */,
+				A69A81CE2B8C832B006BAEB2 /* PrepareViewController.swift in Sources */,
 				A69A81A32B8235DC006BAEB2 /* MainViewController.swift in Sources */,
+				A69A81D02B8C8A42006BAEB2 /* ExercisingViewController.swift in Sources */,
+				A69A81CC2B8C786F006BAEB2 /* SetSelectionView.swift in Sources */,
 				A69A819F2B823252006BAEB2 /* TabBarItemType.swift in Sources */,
 				A69A817C2B81CE80006BAEB2 /* SceneDelegate.swift in Sources */,
 				A69A81B82B83AE14006BAEB2 /* UIColor+.swift in Sources */,
