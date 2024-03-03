@@ -28,4 +28,5 @@ extension UIColor {
     }
     
     static let sweatyGreen = UIColor(hexCode: "BAEE66")
+    static let sweatyDarkGreen = UIColor(hexCode: "283D01")
 }
