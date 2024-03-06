@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A624A5312B987DAC00B605A9 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5302B987DAC00B605A9 /* DGCharts */; };
+		A624A5332B987DAC00B605A9 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5322B987DAC00B605A9 /* DGChartsDynamic */; };
+		A624A5352B987DE600B605A9 /* BarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624A5342B987DE600B605A9 /* BarChartView.swift */; };
 		A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81792B81CE80006BAEB2 /* AppDelegate.swift */; };
 		A69A817C2B81CE80006BAEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */; };
 		A69A81832B81CE83006BAEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69A81822B81CE83006BAEB2 /* Assets.xcassets */; };
@@ -34,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A624A5342B987DE600B605A9 /* BarChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartView.swift; sourceTree = "<group>"; };
 		A69A81762B81CE80006BAEB2 /* SweaTy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaTy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A81792B81CE80006BAEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A624A5332B987DAC00B605A9 /* DGChartsDynamic in Frameworks */,
 				A69A81B22B8379F8006BAEB2 /* SnapKit in Frameworks */,
+				A624A5312B987DAC00B605A9 /* DGCharts in Frameworks */,
 				A69A81B42B8379F8006BAEB2 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +209,7 @@
 			children = (
 				A69A81C72B888891006BAEB2 /* StartExerciseView.swift */,
 				A69A81CB2B8C786F006BAEB2 /* SetSelectionView.swift */,
+				A624A5342B987DE600B605A9 /* BarChartView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -226,6 +233,8 @@
 			packageProductDependencies = (
 				A69A81B12B8379F8006BAEB2 /* SnapKit */,
 				A69A81B32B8379F8006BAEB2 /* SnapKit-Dynamic */,
+				A624A5302B987DAC00B605A9 /* DGCharts */,
+				A624A5322B987DAC00B605A9 /* DGChartsDynamic */,
 			);
 			productName = SweaTy;
 			productReference = A69A81762B81CE80006BAEB2 /* SweaTy.app */;
@@ -257,6 +266,7 @@
 			mainGroup = A69A816D2B81CE80006BAEB2;
 			packageReferences = (
 				A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = A69A81772B81CE80006BAEB2 /* Products */;
 			projectDirPath = "";
@@ -295,6 +305,7 @@
 				A69A81AA2B8236C9006BAEB2 /* StatisticsViewController.swift in Sources */,
 				A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */,
 				A69A81AD2B823728006BAEB2 /* MyPageViewController.swift in Sources */,
+				A624A5352B987DE600B605A9 /* BarChartView.swift in Sources */,
 				A69A81A12B823410006BAEB2 /* HomeCoordinator.swift in Sources */,
 				A69A81B62B837CFC006BAEB2 /* ShadowRoundView.swift in Sources */,
 				A69A81CE2B8C832B006BAEB2 /* PrepareViewController.swift in Sources */,
@@ -516,6 +527,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 		A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit";
@@ -527,6 +546,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A624A5302B987DAC00B605A9 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		A624A5322B987DAC00B605A9 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
 		A69A81B12B8379F8006BAEB2 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */;
