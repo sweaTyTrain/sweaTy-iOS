@@ -5,8 +5,10 @@
 //  Created by 이대현 on 2/18/24.
 //
 
+import Charts
 import SnapKit
 import UIKit
+import DGCharts
 
 protocol MainViewControllerDelegate: AnyObject {
     func moveSelectView()
@@ -48,7 +50,12 @@ class MainViewController: UIViewController {
     }()
     
     private lazy var weekCalendarView: ShadowRoundView = {
-        let view = ShadowRoundView()
+        let barChartView = BarChartView()
+        barChartView.noDataText = "데이터가 없습니다."
+        barChartView.noDataFont = .systemFont(ofSize: 20)
+        barChartView.noDataTextColor = .lightGray
+        barChartView.setChart()
+        let view = ShadowRoundView(view: barChartView)
         return view
     }()
     
