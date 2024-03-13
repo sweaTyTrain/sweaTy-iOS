@@ -54,4 +54,8 @@ final class ShadowRoundView: UIView {
         self.contentView.layer.masksToBounds = true
         self.contentView.backgroundColor = .white
     }
+    
+    func setColor(_ color: UIColor) {
+        self.contentView.backgroundColor = color
+    }
 }

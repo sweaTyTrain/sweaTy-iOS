@@ -10,6 +10,7 @@
 		A624A5312B987DAC00B605A9 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5302B987DAC00B605A9 /* DGCharts */; };
 		A624A5332B987DAC00B605A9 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5322B987DAC00B605A9 /* DGChartsDynamic */; };
 		A624A5352B987DE600B605A9 /* BarChartView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624A5342B987DE600B605A9 /* BarChartView+.swift */; };
+		A652BD7E2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */; };
 		A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81792B81CE80006BAEB2 /* AppDelegate.swift */; };
 		A69A817C2B81CE80006BAEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */; };
 		A69A81832B81CE83006BAEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69A81822B81CE83006BAEB2 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		A624A5342B987DE600B605A9 /* BarChartView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BarChartView+.swift"; sourceTree = "<group>"; };
+		A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A69A81762B81CE80006BAEB2 /* SweaTy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaTy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A81792B81CE80006BAEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 			children = (
 				A69A81C72B888891006BAEB2 /* StartExerciseView.swift */,
 				A69A81CB2B8C786F006BAEB2 /* SetSelectionView.swift */,
+				A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				A69A819F2B823252006BAEB2 /* TabBarItemType.swift in Sources */,
 				A69A817C2B81CE80006BAEB2 /* SceneDelegate.swift in Sources */,
 				A69A81B82B83AE14006BAEB2 /* UIColor+.swift in Sources */,
+				A652BD7E2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

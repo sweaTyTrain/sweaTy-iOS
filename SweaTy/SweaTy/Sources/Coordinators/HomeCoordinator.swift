@@ -26,7 +26,9 @@ final class HomeCoordinator : Coordinator {
 extension HomeCoordinator: MainViewControllerDelegate,
                            ExerciseSelectViewControllerDelegate,
                            PrepareViewControllerDelegate,
-                           ExercisingViewControllerDelegate {
+                           ExercisingViewControllerDelegate,
+                           ExerciseResultViewControllerDelegate {
+    
     func moveSelectView() {
         let selectVC = ExerciseSelectViewController()
         selectVC.delegate = self
@@ -47,6 +49,14 @@ extension HomeCoordinator: MainViewControllerDelegate,
     
     func moveResultView() {
         let resultVC = ExerciseResultViewController()
+        resultVC.delegate = self
         navigationController.pushViewController(resultVC, animated: true)
+    }
+    
+    func moveMainView() {
+        navigationController.viewControllers = []
+        let mainVC = MainViewController()
+        mainVC.delegate = self
+        navigationController.pushViewController(mainVC, animated: true)
     }
 }

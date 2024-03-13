@@ -66,9 +66,16 @@ class MainViewController: UIViewController {
         return label
     }()
     
-    private lazy var homeTrainingView: ShadowRoundView = {
-        let view = ShadowRoundView()
-        return view
+    private lazy var homeTrainingCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(ImageLabelCollectionViewCell.self, forCellWithReuseIdentifier: "ImageLabelCollectionViewCell")
+        return collectionView
     }()
     
     // weak var로 하면, viewDidLoad 이후 nil이 되어버림??
@@ -130,12 +137,38 @@ class MainViewController: UIViewController {
             make.left.right.equalTo(weekCalendarView)
         }
         
-        mainContentView.addSubview(homeTrainingView)
-        homeTrainingView.snp.makeConstraints { make in
+        mainContentView.addSubview(homeTrainingCollectionView)
+        homeTrainingCollectionView.snp.makeConstraints { make in
             make.top.equalTo(homeTrainingLabel.snp.bottom).offset(20)
             make.left.right.equalTo(homeTrainingLabel)
-            make.height.equalTo(200)
+            make.height.equalTo(150)
             make.bottom.equalTo(mainContentView).offset(-20)
         }
+    }
+}
+
+extension MainViewController: UICollectionViewDataSource,
+                              UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageLabelCollectionViewCell", for: indexPath) as? ImageLabelCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        return cell
+    }
+}
+
+extension MainViewController : UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = collectionView.bounds.width
+        let numberOfItemsPerRow: CGFloat = 2
+        let spacing: CGFloat = 35 // width spacing
+        let availableWidth = width - spacing * (numberOfItemsPerRow + 1)
+        let itemDimension = floor(availableWidth / numberOfItemsPerRow)
+        return CGSize(width: itemDimension, height: itemDimension)
     }
 }

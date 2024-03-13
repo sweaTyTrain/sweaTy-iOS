@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ExerciseResultViewControllerDelegate: AnyObject {
+    func moveMainView()
+}
+
 final class ExerciseResultViewController: UIViewController {
     private lazy var mainScrollView: UIScrollView = {
         let scrollView = UIScrollView()
@@ -81,10 +85,12 @@ final class ExerciseResultViewController: UIViewController {
         let button = UIButton()
         button.configuration = config
         button.addAction(UIAction { [weak self] _ in
-//            self?.delegate?.moveExercisingView()
+            self?.delegate?.moveMainView()
         }, for: .touchUpInside)
         return button
     }()
+    
+    weak var delegate: ExerciseResultViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
