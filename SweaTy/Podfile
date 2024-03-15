@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SweaTy' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+pod 'DGCharts'
+pod 'SnapKit'
+  # Pods for SweaTy
+
+end

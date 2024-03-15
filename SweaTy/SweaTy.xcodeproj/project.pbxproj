@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A624A5312B987DAC00B605A9 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5302B987DAC00B605A9 /* DGCharts */; };
-		A624A5332B987DAC00B605A9 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A624A5322B987DAC00B605A9 /* DGChartsDynamic */; };
+		455A709B2EBBFD2587CBA0F3 /* Pods_SweaTy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */; };
 		A624A5352B987DE600B605A9 /* BarChartView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624A5342B987DE600B605A9 /* BarChartView+.swift */; };
 		A652BD7E2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */; };
 		A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81792B81CE80006BAEB2 /* AppDelegate.swift */; };
@@ -25,8 +24,6 @@
 		A69A81AA2B8236C9006BAEB2 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81A92B8236C9006BAEB2 /* StatisticsViewController.swift */; };
 		A69A81AD2B823728006BAEB2 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81AC2B823728006BAEB2 /* MyPageViewController.swift */; };
 		A69A81AF2B823751006BAEB2 /* MyPageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81AE2B823751006BAEB2 /* MyPageCoordinator.swift */; };
-		A69A81B22B8379F8006BAEB2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A69A81B12B8379F8006BAEB2 /* SnapKit */; };
-		A69A81B42B8379F8006BAEB2 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = A69A81B32B8379F8006BAEB2 /* SnapKit-Dynamic */; };
 		A69A81B62B837CFC006BAEB2 /* ShadowRoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81B52B837CFC006BAEB2 /* ShadowRoundView.swift */; };
 		A69A81B82B83AE14006BAEB2 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81B72B83AE14006BAEB2 /* UIColor+.swift */; };
 		A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81C72B888891006BAEB2 /* StartExerciseView.swift */; };
@@ -37,7 +34,22 @@
 		A69A81D22B8C8BE3006BAEB2 /* ExerciseResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81D12B8C8BE3006BAEB2 /* ExerciseResultViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A68ADB612BA2D0D300000286 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweaTy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		264CC9355153F0C5CCBFE91B /* Pods-SweaTy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaTy.debug.xcconfig"; path = "Target Support Files/Pods-SweaTy/Pods-SweaTy.debug.xcconfig"; sourceTree = "<group>"; };
 		A624A5342B987DE600B605A9 /* BarChartView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BarChartView+.swift"; sourceTree = "<group>"; };
 		A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A69A81762B81CE80006BAEB2 /* SweaTy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaTy.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +76,7 @@
 		A69A81CD2B8C832B006BAEB2 /* PrepareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareViewController.swift; sourceTree = "<group>"; };
 		A69A81CF2B8C8A42006BAEB2 /* ExercisingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisingViewController.swift; sourceTree = "<group>"; };
 		A69A81D12B8C8BE3006BAEB2 /* ExerciseResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseResultViewController.swift; sourceTree = "<group>"; };
+		C97DC78BC6C2CC83AA95A695 /* Pods-SweaTy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaTy.release.xcconfig"; path = "Target Support Files/Pods-SweaTy/Pods-SweaTy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,21 +84,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A624A5332B987DAC00B605A9 /* DGChartsDynamic in Frameworks */,
-				A69A81B22B8379F8006BAEB2 /* SnapKit in Frameworks */,
-				A624A5312B987DAC00B605A9 /* DGCharts in Frameworks */,
-				A69A81B42B8379F8006BAEB2 /* SnapKit-Dynamic in Frameworks */,
+				455A709B2EBBFD2587CBA0F3 /* Pods_SweaTy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C6E5A8C13FB965323AC49BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				264CC9355153F0C5CCBFE91B /* Pods-SweaTy.debug.xcconfig */,
+				C97DC78BC6C2CC83AA95A695 /* Pods-SweaTy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A68ADB5D2BA2D0D300000286 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A69A816D2B81CE80006BAEB2 = {
 			isa = PBXGroup;
 			children = (
 				A69A81782B81CE80006BAEB2 /* SweaTy */,
 				A69A81772B81CE80006BAEB2 /* Products */,
+				A68ADB5D2BA2D0D300000286 /* Frameworks */,
+				2C6E5A8C13FB965323AC49BC /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,21 +253,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A69A818A2B81CE83006BAEB2 /* Build configuration list for PBXNativeTarget "SweaTy" */;
 			buildPhases = (
+				4222D2D9A7AA413F771A0660 /* [CP] Check Pods Manifest.lock */,
 				A69A81722B81CE80006BAEB2 /* Sources */,
 				A69A81732B81CE80006BAEB2 /* Frameworks */,
 				A69A81742B81CE80006BAEB2 /* Resources */,
+				A68ADB612BA2D0D300000286 /* Embed Frameworks */,
+				8EFD8C3C6E98C0F390192C48 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SweaTy;
-			packageProductDependencies = (
-				A69A81B12B8379F8006BAEB2 /* SnapKit */,
-				A69A81B32B8379F8006BAEB2 /* SnapKit-Dynamic */,
-				A624A5302B987DAC00B605A9 /* DGCharts */,
-				A624A5322B987DAC00B605A9 /* DGChartsDynamic */,
-			);
 			productName = SweaTy;
 			productReference = A69A81762B81CE80006BAEB2 /* SweaTy.app */;
 			productType = "com.apple.product-type.application";
@@ -267,10 +293,6 @@
 				Base,
 			);
 			mainGroup = A69A816D2B81CE80006BAEB2;
-			packageReferences = (
-				A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */,
-			);
 			productRefGroup = A69A81772B81CE80006BAEB2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -291,6 +313,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4222D2D9A7AA413F771A0660 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SweaTy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EFD8C3C6E98C0F390192C48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweaTy/Pods-SweaTy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SweaTy/Pods-SweaTy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SweaTy/Pods-SweaTy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A69A81722B81CE80006BAEB2 /* Sources */ = {
@@ -373,7 +437,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,7 +500,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -457,11 +521,13 @@
 		};
 		A69A818B2B81CE83006BAEB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 264CC9355153F0C5CCBFE91B /* Pods-SweaTy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39R4Y76837;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SweaTy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -483,11 +549,13 @@
 		};
 		A69A818C2B81CE83006BAEB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C97DC78BC6C2CC83AA95A695 /* Pods-SweaTy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 39R4Y76837;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SweaTy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -529,48 +597,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/danielgindi/Charts";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.0;
-			};
-		};
-		A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.7.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A624A5302B987DAC00B605A9 /* DGCharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGCharts;
-		};
-		A624A5322B987DAC00B605A9 /* DGChartsDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A624A52F2B987DAC00B605A9 /* XCRemoteSwiftPackageReference "Charts" */;
-			productName = DGChartsDynamic;
-		};
-		A69A81B12B8379F8006BAEB2 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		A69A81B32B8379F8006BAEB2 /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A69A81B02B8379F8006BAEB2 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A69A816E2B81CE80006BAEB2 /* Project object */;
 }
