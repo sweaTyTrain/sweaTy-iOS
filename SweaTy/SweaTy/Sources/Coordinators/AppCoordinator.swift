@@ -17,11 +17,19 @@ class AppCoordinator: Coordinator {
     
     func start() {
         // 이후 여기에 로그인 로직 추가
-        showMainTabBarController()
+        
+        showLoginViewController()
+//        showMainTabBarController() // 임시
     }
     
     private func showMainTabBarController() {
         let coordinator = MainTabBarCoordinator(navigationController: self.navigationController)
+        coordinator.start()
+        self.childCoordinators.append(coordinator)
+    }
+    
+    private func showLoginViewController() {
+        let coordinator = LoginCoordinator(navigationController: self.navigationController)
         coordinator.start()
         self.childCoordinators.append(coordinator)
     }
