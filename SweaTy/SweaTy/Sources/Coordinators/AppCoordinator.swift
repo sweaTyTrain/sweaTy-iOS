@@ -18,8 +18,8 @@ class AppCoordinator: Coordinator {
     func start() {
         // 이후 여기에 로그인 로직 추가
         
-        showLoginViewController()
-//        showMainTabBarController() // 임시
+//        showLoginViewController()
+        showMainTabBarController() // 임시
     }
     
     private func showMainTabBarController() {

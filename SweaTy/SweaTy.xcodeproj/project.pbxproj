@@ -35,6 +35,7 @@
 		A6F4C6B12BA7EE810019427F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4C6B02BA7EE810019427F /* LoginViewController.swift */; };
 		A6F4C6B32BA7F0A30019427F /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4C6B22BA7F0A30019427F /* LoginCoordinator.swift */; };
 		A6F4C6B52BA7F6BD0019427F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4C6B42BA7F6BD0019427F /* SignUpViewController.swift */; };
+		A6F4C6B82BA93C390019427F /* SettingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6F4C6B72BA93C390019427F /* SettingItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		A6F4C6B02BA7EE810019427F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A6F4C6B22BA7F0A30019427F /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
 		A6F4C6B42BA7F6BD0019427F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A6F4C6B72BA93C390019427F /* SettingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingItemView.swift; sourceTree = "<group>"; };
 		C97DC78BC6C2CC83AA95A695 /* Pods-SweaTy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaTy.release.xcconfig"; path = "Target Support Files/Pods-SweaTy/Pods-SweaTy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 		A69A81A52B823680006BAEB2 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				A6F4C6B62BA93BCD0019427F /* View */,
 				A69A81AB2B82371C006BAEB2 /* VCs */,
 			);
 			path = MyPage;
@@ -277,6 +280,14 @@
 				A6F4C6B42BA7F6BD0019427F /* SignUpViewController.swift */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		A6F4C6B62BA93BCD0019427F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6F4C6B72BA93C390019427F /* SettingItemView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +405,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6F4C6B82BA93C390019427F /* SettingItemView.swift in Sources */,
 				A69A81972B8230DF006BAEB2 /* Coordinator.swift in Sources */,
 				A69A81A82B82369E006BAEB2 /* StatisticsCoordinator.swift in Sources */,
 				A69A819B2B823133006BAEB2 /* AppCoordinator.swift in Sources */,
