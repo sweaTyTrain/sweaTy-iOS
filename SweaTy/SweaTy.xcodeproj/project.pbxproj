@@ -13,6 +13,9 @@
 		A66C415C2BC3E0A800AC4284 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */; };
 		A66C415F2BC3E24600AC4284 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415E2BC3E24600AC4284 /* VideoView.swift */; };
 		A66C41622BC3E69200AC4284 /* nike.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A66C41612BC3E69200AC4284 /* nike.mp4 */; };
+		A66C41662BC431C700AC4284 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C41652BC431C700AC4284 /* ExerciseListViewController.swift */; };
+		A66C41692BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C41682BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift */; };
+		A66C416B2BC4358F00AC4284 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C416A2BC4358F00AC4284 /* UICollectionViewCell+.swift */; };
 		A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A81792B81CE80006BAEB2 /* AppDelegate.swift */; };
 		A69A817C2B81CE80006BAEB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */; };
 		A69A81832B81CE83006BAEB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A69A81822B81CE83006BAEB2 /* Assets.xcassets */; };
@@ -62,6 +65,9 @@
 		A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		A66C415E2BC3E24600AC4284 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		A66C41612BC3E69200AC4284 /* nike.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = nike.mp4; path = SweaTy/Resources/Videos/nike.mp4; sourceTree = "<group>"; };
+		A66C41652BC431C700AC4284 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
+		A66C41682BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListCollectionViewCell.swift; sourceTree = "<group>"; };
+		A66C416A2BC4358F00AC4284 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		A69A81762B81CE80006BAEB2 /* SweaTy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SweaTy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A69A81792B81CE80006BAEB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A69A817B2B81CE80006BAEB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +123,7 @@
 		A66C41572BC3E05300AC4284 /* Renewal */ = {
 			isa = PBXGroup;
 			children = (
+				A66C41632BC4317200AC4284 /* ExerciseList */,
 				A66C41582BC3E06800AC4284 /* Starting */,
 			);
 			path = Renewal;
@@ -152,6 +159,31 @@
 			children = (
 			);
 			path = Videos;
+			sourceTree = "<group>";
+		};
+		A66C41632BC4317200AC4284 /* ExerciseList */ = {
+			isa = PBXGroup;
+			children = (
+				A66C41672BC4347900AC4284 /* View */,
+				A66C41642BC431BB00AC4284 /* VCs */,
+			);
+			path = ExerciseList;
+			sourceTree = "<group>";
+		};
+		A66C41642BC431BB00AC4284 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				A66C41652BC431C700AC4284 /* ExerciseListViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		A66C41672BC4347900AC4284 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A66C41682BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A68ADB5D2BA2D0D300000286 /* Frameworks */ = {
@@ -246,6 +278,7 @@
 				A69A81B52B837CFC006BAEB2 /* ShadowRoundView.swift */,
 				A624A5342B987DE600B605A9 /* BarChartView+.swift */,
 				A69A81B72B83AE14006BAEB2 /* UIColor+.swift */,
+				A66C416A2BC4358F00AC4284 /* UICollectionViewCell+.swift */,
 			);
 			path = Default;
 			sourceTree = "<group>";
@@ -461,6 +494,7 @@
 				A69A81A82B82369E006BAEB2 /* StatisticsCoordinator.swift in Sources */,
 				A69A819B2B823133006BAEB2 /* AppCoordinator.swift in Sources */,
 				A6F4C6B12BA7EE810019427F /* LoginViewController.swift in Sources */,
+				A66C41692BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift in Sources */,
 				A6F4C6B52BA7F6BD0019427F /* SignUpViewController.swift in Sources */,
 				A69A81D22B8C8BE3006BAEB2 /* ExerciseResultViewController.swift in Sources */,
 				A66C415F2BC3E24600AC4284 /* VideoView.swift in Sources */,
@@ -472,7 +506,9 @@
 				A69A81AA2B8236C9006BAEB2 /* StatisticsViewController.swift in Sources */,
 				A69A817A2B81CE80006BAEB2 /* AppDelegate.swift in Sources */,
 				A69A81AD2B823728006BAEB2 /* MyPageViewController.swift in Sources */,
+				A66C41662BC431C700AC4284 /* ExerciseListViewController.swift in Sources */,
 				A624A5352B987DE600B605A9 /* BarChartView+.swift in Sources */,
+				A66C416B2BC4358F00AC4284 /* UICollectionViewCell+.swift in Sources */,
 				A69A81A12B823410006BAEB2 /* HomeCoordinator.swift in Sources */,
 				A69A81B62B837CFC006BAEB2 /* ShadowRoundView.swift in Sources */,
 				A69A81CE2B8C832B006BAEB2 /* PrepareViewController.swift in Sources */,

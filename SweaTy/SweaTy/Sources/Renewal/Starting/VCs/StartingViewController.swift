@@ -42,6 +42,10 @@ final class StartingViewController: UIViewController {
         button.backgroundColor = .white
         button.layer.cornerRadius = 35
         button.layer.cornerCurve = .continuous
+        button.addAction(UIAction { [weak self] _ in
+            let listVC = ExerciseListViewController()
+            self?.navigationController?.pushViewController(listVC, animated: true)
+        }, for: .touchUpInside)
         return button
     }()
     
