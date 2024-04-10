@@ -129,7 +129,12 @@ final class PrepareViewController: UIViewController {
         let button = UIButton()
         button.configuration = config
         button.addAction(UIAction { [weak self] _ in
-            self?.delegate?.moveExercisingView()
+            if let delegate = self?.delegate {
+                self?.delegate?.moveExercisingView()
+            } else {
+                let exercisingVC = ExercisingViewController()
+                self?.navigationController?.pushViewController(exercisingVC, animated: true)
+            }
         }, for: .touchUpInside)
         return button
     }()

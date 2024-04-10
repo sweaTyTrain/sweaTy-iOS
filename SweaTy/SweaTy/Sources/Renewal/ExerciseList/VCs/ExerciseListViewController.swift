@@ -62,4 +62,8 @@ extension ExerciseListViewController:
         )
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = ExerciseDetailViewController()
+        self.navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
