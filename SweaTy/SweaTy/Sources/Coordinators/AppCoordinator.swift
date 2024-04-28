@@ -19,7 +19,8 @@ class AppCoordinator: Coordinator {
         // 이후 여기에 로그인 로직 추가
         
 //        showLoginViewController()
-        showMainTabBarController() // 임시
+//        showMainTabBarController() // 임시
+        showRenewalMainViewController()
     }
     
     private func showMainTabBarController() {
@@ -30,6 +31,11 @@ class AppCoordinator: Coordinator {
     
     private func showLoginViewController() {
         let coordinator = LoginCoordinator(navigationController: self.navigationController)
+        coordinator.start()
+        self.childCoordinators.append(coordinator)
+    }
+    private func showRenewalMainViewController() {
+        let coordinator = RenewalHomeCoordinator(navigationController: self.navigationController)
         coordinator.start()
         self.childCoordinators.append(coordinator)
     }

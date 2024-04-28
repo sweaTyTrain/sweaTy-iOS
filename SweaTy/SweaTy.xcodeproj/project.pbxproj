@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		455A709B2EBBFD2587CBA0F3 /* Pods_SweaTy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */; };
 		A624A5352B987DE600B605A9 /* BarChartView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624A5342B987DE600B605A9 /* BarChartView+.swift */; };
+		A64E20E52BDE6F40001D6225 /* RenewalHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E20E42BDE6F40001D6225 /* RenewalHomeCoordinator.swift */; };
 		A652BD7E2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */; };
 		A66C415C2BC3E0A800AC4284 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */; };
 		A66C415F2BC3E24600AC4284 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415E2BC3E24600AC4284 /* VideoView.swift */; };
@@ -62,6 +63,7 @@
 		161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweaTy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		264CC9355153F0C5CCBFE91B /* Pods-SweaTy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaTy.debug.xcconfig"; path = "Target Support Files/Pods-SweaTy/Pods-SweaTy.debug.xcconfig"; sourceTree = "<group>"; };
 		A624A5342B987DE600B605A9 /* BarChartView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BarChartView+.swift"; sourceTree = "<group>"; };
+		A64E20E42BDE6F40001D6225 /* RenewalHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenewalHomeCoordinator.swift; sourceTree = "<group>"; };
 		A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		A66C415E2BC3E24600AC4284 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
@@ -122,9 +124,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A64E20E32BDE6EF9001D6225 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A64E20E42BDE6F40001D6225 /* RenewalHomeCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		A66C41572BC3E05300AC4284 /* Renewal */ = {
 			isa = PBXGroup;
 			children = (
+				A64E20E32BDE6EF9001D6225 /* Coordinator */,
 				A66C41732BC673AD00AC4284 /* Exercising */,
 				A66C41632BC4317200AC4284 /* ExerciseList */,
 				A66C41582BC3E06800AC4284 /* Starting */,
@@ -520,6 +531,7 @@
 				A66C415F2BC3E24600AC4284 /* VideoView.swift in Sources */,
 				A69A81C82B888891006BAEB2 /* StartExerciseView.swift in Sources */,
 				A6F4C6B32BA7F0A30019427F /* LoginCoordinator.swift in Sources */,
+				A64E20E52BDE6F40001D6225 /* RenewalHomeCoordinator.swift in Sources */,
 				A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */,
 				A69A81AF2B823751006BAEB2 /* MyPageCoordinator.swift in Sources */,
 				A69A819D2B8231D3006BAEB2 /* MainTabBarCoordinator.swift in Sources */,

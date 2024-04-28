@@ -31,7 +31,7 @@ final class ExercisingViewController: UIViewController {
         return button
     }()
     
-    weak var delegate: ExercisingViewControllerDelegate? = nil
+    var delegate: ExercisingViewControllerDelegate?
     
     override func loadView() {
         let webConfiguration = WKWebViewConfiguration()

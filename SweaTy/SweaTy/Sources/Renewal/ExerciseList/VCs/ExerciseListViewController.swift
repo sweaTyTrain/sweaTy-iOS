@@ -8,6 +8,10 @@
 import SnapKit
 import UIKit
 
+protocol ExerciseListViewControllerDelegate: AnyObject {
+    func moveToDetailView()
+}
+
 final class ExerciseListViewController: UIViewController {
     private lazy var listColllectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
@@ -19,6 +23,8 @@ final class ExerciseListViewController: UIViewController {
         collectionView.delegate = self
         return collectionView
     }()
+    
+    var delegate: ExerciseListViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +69,6 @@ extension ExerciseListViewController:
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let detailVC = ExerciseDetailViewController()
-        self.navigationController?.pushViewController(detailVC, animated: true)
+        self.delegate?.moveToDetailView()
     }
 }

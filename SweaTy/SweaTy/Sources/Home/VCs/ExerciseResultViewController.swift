@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ExerciseResultViewControllerDelegate: AnyObject {
-    func moveMainView()
+    func moveToListView()
 }
 
 final class ExerciseResultViewController: UIViewController {
@@ -85,12 +85,12 @@ final class ExerciseResultViewController: UIViewController {
         let button = UIButton()
         button.configuration = config
         button.addAction(UIAction { [weak self] _ in
-            self?.delegate?.moveMainView()
+            self?.delegate?.moveToListView()
         }, for: .touchUpInside)
         return button
     }()
     
-    weak var delegate: ExerciseResultViewControllerDelegate?
+    var delegate: ExerciseResultViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

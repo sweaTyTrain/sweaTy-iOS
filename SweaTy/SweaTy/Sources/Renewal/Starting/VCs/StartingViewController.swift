@@ -9,6 +9,10 @@ import AVFoundation
 import SnapKit
 import UIKit
 
+protocol StartingViewControllerDelegate: AnyObject {
+    func moveToListView()
+}
+
 final class StartingViewController: UIViewController {
     private lazy var videoView: VideoView = {
         let videoView = VideoView()
@@ -43,11 +47,15 @@ final class StartingViewController: UIViewController {
         button.layer.cornerRadius = 35
         button.layer.cornerCurve = .continuous
         button.addAction(UIAction { [weak self] _ in
-            let listVC = ExerciseListViewController()
-            self?.navigationController?.pushViewController(listVC, animated: true)
+            print(self?.delegate)
+            self?.delegate?.moveToListView()
+//            let listVC = ExerciseListViewController()
+//            self?.navigationController?.pushViewController(listVC, animated: true)
         }, for: .touchUpInside)
         return button
     }()
+    
+    var delegate: StartingViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

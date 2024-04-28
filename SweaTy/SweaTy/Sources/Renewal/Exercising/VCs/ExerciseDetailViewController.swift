@@ -9,6 +9,10 @@ import AVFoundation
 import SnapKit
 import UIKit
 
+protocol ExerciseDetailViewControllerDelegate: AnyObject {
+    func moveToPrepareView()
+}
+
 final class ExerciseDetailViewController: UIViewController {
     private lazy var videoView: VideoView = {
         let videoView = VideoView()
@@ -52,11 +56,12 @@ final class ExerciseDetailViewController: UIViewController {
         button.layer.cornerRadius = 35
         button.layer.cornerCurve = .continuous
         button.addAction(UIAction { [weak self] _ in
-            let prepareVC = PrepareViewController()
-            self?.navigationController?.pushViewController(prepareVC, animated: true)
+            self?.delegate?.moveToPrepareView()
         }, for: .touchUpInside)
         return button
     }()
+    
+    weak var delegate: ExerciseDetailViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
