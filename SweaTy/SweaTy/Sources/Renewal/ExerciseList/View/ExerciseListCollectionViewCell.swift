@@ -19,15 +19,15 @@ final class ExerciseListCollectionViewCell: UICollectionViewCell {
     
     private lazy var translucentView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        view.backgroundColor = UIColor(white: 1, alpha: 0.6)
         return view
     }()
     
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.text = "스쿼트"
-        label.textColor = .white
-        label.font = .systemFont(ofSize: 32)
+        label.textColor = .black
+        label.font = .systemFont(ofSize: 32, weight: .bold)
         return label
     }()
     override init(frame: CGRect) {
@@ -56,5 +56,10 @@ final class ExerciseListCollectionViewCell: UICollectionViewCell {
             make.centerY.equalToSuperview()
             make.left.equalToSuperview().offset(25)
         }
+    }
+    
+    func setInfo(info: ExerciseInfo) {
+        titleLabel.text = info.name
+        backgroundImageView.image = UIImage(named: info.imageName)
     }
 }

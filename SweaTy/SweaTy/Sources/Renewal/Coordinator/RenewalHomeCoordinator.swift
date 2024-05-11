@@ -36,7 +36,7 @@ extension RenewalHomeCoordinator: StartingViewControllerDelegate,
         navigationController.pushViewController(listVC, animated: true)
     }
     
-    func moveToDetailView() {
+    func moveToDetailView(info: ExerciseInfo) {
         let detailVC = ExerciseDetailViewController()
         detailVC.delegate = self
         navigationController.pushViewController(detailVC, animated: true)

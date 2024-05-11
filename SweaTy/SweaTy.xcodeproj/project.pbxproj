@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		455A709B2EBBFD2587CBA0F3 /* Pods_SweaTy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */; };
 		A624A5352B987DE600B605A9 /* BarChartView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A624A5342B987DE600B605A9 /* BarChartView+.swift */; };
+		A62FE22E2BEF6F8D00BACF77 /* ExerciseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FE22D2BEF6F8D00BACF77 /* ExerciseInfo.swift */; };
 		A64E20E52BDE6F40001D6225 /* RenewalHomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64E20E42BDE6F40001D6225 /* RenewalHomeCoordinator.swift */; };
+		A64E20E92BDEB58B001D6225 /* main_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A64E20E82BDEB58B001D6225 /* main_video.mp4 */; };
 		A652BD7E2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */; };
 		A66C415C2BC3E0A800AC4284 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */; };
 		A66C415F2BC3E24600AC4284 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C415E2BC3E24600AC4284 /* VideoView.swift */; };
-		A66C41622BC3E69200AC4284 /* nike.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = A66C41612BC3E69200AC4284 /* nike.mp4 */; };
 		A66C41662BC431C700AC4284 /* ExerciseListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C41652BC431C700AC4284 /* ExerciseListViewController.swift */; };
 		A66C41692BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C41682BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift */; };
 		A66C416B2BC4358F00AC4284 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A66C416A2BC4358F00AC4284 /* UICollectionViewCell+.swift */; };
@@ -63,11 +64,12 @@
 		161B9E7F06B073CF72978CB0 /* Pods_SweaTy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SweaTy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		264CC9355153F0C5CCBFE91B /* Pods-SweaTy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SweaTy.debug.xcconfig"; path = "Target Support Files/Pods-SweaTy/Pods-SweaTy.debug.xcconfig"; sourceTree = "<group>"; };
 		A624A5342B987DE600B605A9 /* BarChartView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BarChartView+.swift"; sourceTree = "<group>"; };
+		A62FE22D2BEF6F8D00BACF77 /* ExerciseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseInfo.swift; sourceTree = "<group>"; };
 		A64E20E42BDE6F40001D6225 /* RenewalHomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenewalHomeCoordinator.swift; sourceTree = "<group>"; };
+		A64E20E82BDEB58B001D6225 /* main_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = main_video.mp4; sourceTree = "<group>"; };
 		A652BD7D2BA1D4FB00CA9F37 /* ImageLabelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelCollectionViewCell.swift; sourceTree = "<group>"; };
 		A66C415B2BC3E0A800AC4284 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
 		A66C415E2BC3E24600AC4284 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
-		A66C41612BC3E69200AC4284 /* nike.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = nike.mp4; path = SweaTy/Resources/Videos/nike.mp4; sourceTree = "<group>"; };
 		A66C41652BC431C700AC4284 /* ExerciseListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListViewController.swift; sourceTree = "<group>"; };
 		A66C41682BC4349B00AC4284 /* ExerciseListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseListCollectionViewCell.swift; sourceTree = "<group>"; };
 		A66C416A2BC4358F00AC4284 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
@@ -124,6 +126,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A62FE22C2BEF6F8000BACF77 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A62FE22D2BEF6F8D00BACF77 /* ExerciseInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A64E20E32BDE6EF9001D6225 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		A66C41602BC3E45300AC4284 /* Videos */ = {
 			isa = PBXGroup;
 			children = (
+				A64E20E82BDEB58B001D6225 /* main_video.mp4 */,
 			);
 			path = Videos;
 			sourceTree = "<group>";
@@ -178,6 +189,7 @@
 		A66C41632BC4317200AC4284 /* ExerciseList */ = {
 			isa = PBXGroup;
 			children = (
+				A62FE22C2BEF6F8000BACF77 /* Model */,
 				A66C41672BC4347900AC4284 /* View */,
 				A66C41642BC431BB00AC4284 /* VCs */,
 			);
@@ -227,7 +239,6 @@
 		A69A816D2B81CE80006BAEB2 = {
 			isa = PBXGroup;
 			children = (
-				A66C41612BC3E69200AC4284 /* nike.mp4 */,
 				A69A81782B81CE80006BAEB2 /* SweaTy */,
 				A69A81772B81CE80006BAEB2 /* Products */,
 				A68ADB5D2BA2D0D300000286 /* Frameworks */,
@@ -463,7 +474,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A66C41622BC3E69200AC4284 /* nike.mp4 in Resources */,
+				A64E20E92BDEB58B001D6225 /* main_video.mp4 in Resources */,
 				A69A81862B81CE83006BAEB2 /* LaunchScreen.storyboard in Resources */,
 				A69A81832B81CE83006BAEB2 /* Assets.xcassets in Resources */,
 			);
@@ -533,6 +544,7 @@
 				A6F4C6B32BA7F0A30019427F /* LoginCoordinator.swift in Sources */,
 				A64E20E52BDE6F40001D6225 /* RenewalHomeCoordinator.swift in Sources */,
 				A69A81CA2B89DCA9006BAEB2 /* ExerciseSelectViewController.swift in Sources */,
+				A62FE22E2BEF6F8D00BACF77 /* ExerciseInfo.swift in Sources */,
 				A69A81AF2B823751006BAEB2 /* MyPageCoordinator.swift in Sources */,
 				A69A819D2B8231D3006BAEB2 /* MainTabBarCoordinator.swift in Sources */,
 				A69A81AA2B8236C9006BAEB2 /* StatisticsViewController.swift in Sources */,

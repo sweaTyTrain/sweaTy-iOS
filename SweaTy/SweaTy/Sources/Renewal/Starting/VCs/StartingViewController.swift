@@ -21,7 +21,7 @@ final class StartingViewController: UIViewController {
     
     private lazy var translucentView: UIView = {
         let view = UIView()
-        view.backgroundColor = UIColor(white: 0, alpha: 0.6)
+        view.backgroundColor = UIColor(white: 1, alpha: 0.4)
         return view
     }()
     
@@ -29,8 +29,8 @@ final class StartingViewController: UIViewController {
         let label = UILabel()
         label.numberOfLines = 0
         label.text = "고민은 시간만 늦출 뿐!\nSweaty AI 트레이너와 함께 달려볼까요?"
-        label.font = .systemFont(ofSize: 32)
-        label.textColor = .white
+        label.font = .systemFont(ofSize: 32, weight: .bold)
+        label.textColor = .black
         return label
     }()
     
@@ -42,8 +42,8 @@ final class StartingViewController: UIViewController {
             NSAttributedString(titleAttr),
             for: .normal
         )
-        button.setTitleColor(.black, for: .normal)
-        button.backgroundColor = .white
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .black
         button.layer.cornerRadius = 35
         button.layer.cornerCurve = .continuous
         button.addAction(UIAction { [weak self] _ in
@@ -69,7 +69,7 @@ final class StartingViewController: UIViewController {
     }
     
     private func setupVideo() {
-        let path: String? = Bundle.main.path(forResource: "nike", ofType: "mp4")
+        let path: String? = Bundle.main.path(forResource: "", ofType: "mp4")
         let url = NSURL(fileURLWithPath: path!)
         videoView.player = AVPlayer(url: url as URL)
         videoView.player?.play()

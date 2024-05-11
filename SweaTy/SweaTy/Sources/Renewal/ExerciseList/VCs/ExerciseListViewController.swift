@@ -9,7 +9,7 @@ import SnapKit
 import UIKit
 
 protocol ExerciseListViewControllerDelegate: AnyObject {
-    func moveToDetailView()
+    func moveToDetailView(info: ExerciseInfo)
 }
 
 final class ExerciseListViewController: UIViewController {
@@ -19,12 +19,19 @@ final class ExerciseListViewController: UIViewController {
         layout.minimumLineSpacing = 10
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.register(ExerciseListCollectionViewCell.self, forCellWithReuseIdentifier: ExerciseListCollectionViewCell.identifier)
+        collectionView.backgroundColor = .systemGray5
         collectionView.dataSource = self
         collectionView.delegate = self
         return collectionView
     }()
     
     var delegate: ExerciseListViewControllerDelegate?
+    
+    let exerciseInfo: [ExerciseInfo] = [
+        ExerciseInfo(name: "스쿼트", description: "", imageName: "squat"),
+        ExerciseInfo(name: "푸쉬업", description: "", imageName: "pushup"),
+        ExerciseInfo(name: "런지", description: "", imageName: "lunge")
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,13 +58,14 @@ extension ExerciseListViewController:
     UICollectionViewDelegate,
     UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return exerciseInfo.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExerciseListCollectionViewCell.identifier, for: indexPath) as? ExerciseListCollectionViewCell else {
             return UICollectionViewCell()
         }
+        cell.setInfo(info: exerciseInfo[indexPath.row])
         return cell
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -69,6 +77,6 @@ extension ExerciseListViewController:
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        self.delegate?.moveToDetailView()
+        self.delegate?.moveToDetailView(info: exerciseInfo[indexPath.row])
     }
 }

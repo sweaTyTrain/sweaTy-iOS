@@ -108,7 +108,7 @@ final class ExerciseDetailViewController: UIViewController {
     }
     
     private func setupVideo() {
-        let path: String? = Bundle.main.path(forResource: "nike", ofType: "mp4")
+        let path: String? = Bundle.main.path(forResource: "main_video", ofType: "mp4")
         let url = NSURL(fileURLWithPath: path!)
         videoView.player = AVPlayer(url: url as URL)
         videoView.player?.play()

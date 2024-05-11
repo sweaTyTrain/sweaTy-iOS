@@ -62,7 +62,8 @@ final class ExercisingViewController: UIViewController {
     }
     
     private func setupURL() {
-        if let url = URL(string: "https://www.apple.com") {
+        let urlString = "https://59.14.44.172:8000/"
+        if let url = URL(string: urlString) {
             let request = URLRequest(url: url)
             webView.load(request)
         }
